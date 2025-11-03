@@ -36,7 +36,7 @@ pipeline {
         stage('Construyendo y levantando los servicios') {
             steps {
                 sh '''
-                    docker-compose up --build -d
+                    docker-compose -p sgu-jajb-10b up --build -d
                 '''
             }
         }

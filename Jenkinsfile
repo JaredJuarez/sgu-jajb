@@ -6,7 +6,7 @@ pipeline {
         stage('Parando los servicios') {
             steps {
                 sh '''
-                    docker-compose -p adj-demo down || true
+                    docker-compose -p sgu-jajb-10b down || true
                 '''
             }
         }
